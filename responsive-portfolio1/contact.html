@@ -1,12 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kate Davis Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+
     <header>
 
         <div class="title">
@@ -26,42 +31,56 @@
 
     </header>
 
-    <div class="contact">
-        <h2>Contact</h2>
-        <div class="container">
-            <form action="action_page.php">
-                <div id="namelabel">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name">
-                </div>
-                <div id="emaillabel">
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email">
-                </div>
-                <div id="submitlabel">
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" placeholder="Write something.."
-                        style="height:200px"></textarea>
-                    <input type="submit" value="Submit">
-                </div>
+    <div class="content">
 
-            </form>
+        <div class="text">
+
+            <p>
+                <h2 class="subtitle">Contact</h2>
+            </p>
+
+            <p id="contactname">
+                Name
+            </p>
+            <input id="namefield" type="text" maxlength="90">
+            </p>
+
+            <br>
+
+            <p id="Email">
+                Email
+            </p>
+            <p>
+                <input id="emailfield" type="email" maxlength="90">
+            </p>
+
+            <br>
+
+            <p id="message">
+                Message
+            </p>
+            <p>
+                <textarea id="messagetext" maxlength="800"></textarea>
+            </p>
+
+            <br>
+
+            <p id="submit"></p>
+
+            <button>Submit</button>
 
 
 
         </div>
+    </div>
 
 
-
-
-
-
-
-        <footer>
-            <div class="footer">
-                <h6>Copyright</h6>
-            </div>
-        </footer>
-
+    <footer>
+        <div class="footer">
+            <h6>Copyright</h6>
+        </div>
+    </footer>
 
 </body>
+
+</html>
